@@ -14,7 +14,10 @@ public class ST10434179_PROG6112_Exam_MichaelHerring_Semester_2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+        
+        
     }
     
 }
