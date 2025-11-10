@@ -69,6 +69,11 @@ public class Main extends javax.swing.JFrame {
         jMenu1.setText("File");
 
         btnExit.setText("Exit");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
         jMenu1.add(btnExit);
 
         jMenuBar1.add(jMenu1);
@@ -116,6 +121,12 @@ public class Main extends javax.swing.JFrame {
     private void txtOutputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOutputActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtOutputActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        // TODO add your handling code here:
+        
+        System.exit(0);
+    }//GEN-LAST:event_btnExitActionPerformed
 
     /**
      * @param args the command line arguments

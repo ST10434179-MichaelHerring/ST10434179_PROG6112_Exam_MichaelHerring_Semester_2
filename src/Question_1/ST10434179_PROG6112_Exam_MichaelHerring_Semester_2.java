@@ -25,7 +25,9 @@ public class ST10434179_PROG6112_Exam_MichaelHerring_Semester_2 {
         
         ProductSales logic = new ProductSales(); //instantiation
         
+        //i need to parse the array properly still, will coem back later
         
+        //output
         System.out.println("PRODUCT DALES REPORT - 2025");
         System.out.println("-----------------------------------------------");
         System.out.println("Total sales: " + logic.TotalSales(sales));
