@@ -53,7 +53,7 @@ public class ProductSales implements IProductSales {
             
             if (productSales[i] < max){
                 
-                max = productSales[i];
+                max = productSales[i][i];
             }
         }
         
@@ -71,7 +71,7 @@ public class ProductSales implements IProductSales {
             
             if (productSales[i] > mix){
                 
-                mix = productSales[i];
+                mix = productSales[i][i];
             }
         }
         
