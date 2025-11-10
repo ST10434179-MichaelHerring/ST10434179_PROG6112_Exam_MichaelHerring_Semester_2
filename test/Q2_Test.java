@@ -12,5 +12,15 @@ import org.junit.Test;
  * @author micha
  */
 public class Q2_Test {
+    @Test
+    public void GetSalesOverLimit_ReturnsNumberOfSales(){
+        
+    }
+    
+    @Test
+    public void GetSalesUnderLimit_ReturnsNumberOfSales(){
+        
+       
+    }
     
 }

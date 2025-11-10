@@ -13,12 +13,23 @@ public class ProductSales implements IProductSales{
 
     @Override
     public int[][] GetProductSales() {
-    
+    int sales[][] = { {300, 150, 700},
+                    {250, 200, 600}
+    };
+
+    return sales;
     }
 
     @Override
     public int GetTotalSales() {
-    
+        
+    int total = 0;
+        
+        for (int sales : ProductSales){
+            total += sales;
+        }
+        
+        return total;
     }
 
     @Override
