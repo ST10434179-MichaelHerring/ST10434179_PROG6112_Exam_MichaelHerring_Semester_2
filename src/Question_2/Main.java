@@ -41,6 +41,8 @@ public class Main extends javax.swing.JFrame {
         btnExit = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         btnClear = new javax.swing.JMenuItem();
+        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
+        jCheckBoxMenuItem2 = new javax.swing.JCheckBoxMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -87,6 +89,14 @@ public class Main extends javax.swing.JFrame {
         });
         jMenu2.add(btnClear);
 
+        jCheckBoxMenuItem1.setSelected(true);
+        jCheckBoxMenuItem1.setText("Load Product Data");
+        jMenu2.add(jCheckBoxMenuItem1);
+
+        jCheckBoxMenuItem2.setSelected(true);
+        jCheckBoxMenuItem2.setText("Save Product Data");
+        jMenu2.add(jCheckBoxMenuItem2);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -124,7 +134,6 @@ public class Main extends javax.swing.JFrame {
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         // TODO add your handling code here:
-        
         System.exit(0);
     }//GEN-LAST:event_btnExitActionPerformed
 
@@ -215,6 +224,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem btnExit;
     private javax.swing.JButton btnLoadData;
     private javax.swing.JButton btnSaveData;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
