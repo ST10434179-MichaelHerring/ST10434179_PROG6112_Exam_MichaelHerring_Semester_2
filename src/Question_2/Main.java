@@ -30,7 +30,7 @@ public class Main extends javax.swing.JFrame {
         btnSaveData = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         txtOutput = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        lblYrsProcessed = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         btnExit = new javax.swing.JMenuItem();
@@ -63,8 +63,8 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel1.setText("Years Processed: ");
+        lblYrsProcessed.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblYrsProcessed.setText("Years Processed: ");
 
         jMenu1.setText("File");
 
@@ -81,6 +81,11 @@ public class Main extends javax.swing.JFrame {
         jMenu2.setText("Edit");
 
         btnClear.setText("Clear");
+        btnClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClearActionPerformed(evt);
+            }
+        });
         jMenu2.add(btnClear);
 
         jMenuBar1.add(jMenu2);
@@ -94,7 +99,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(60, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblYrsProcessed, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnLoadData, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
@@ -111,7 +116,7 @@ public class Main extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblYrsProcessed, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -127,6 +132,13 @@ public class Main extends javax.swing.JFrame {
         
         System.exit(0);
     }//GEN-LAST:event_btnExitActionPerformed
+
+    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+        // TODO add your handling code here:
+        
+        txtOutput.setText("");
+        lblYrsProcessed.setText("Years Processed: ");
+    }//GEN-LAST:event_btnClearActionPerformed
 
     /**
      * @param args the command line arguments
@@ -168,11 +180,11 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem btnExit;
     private javax.swing.JButton btnLoadData;
     private javax.swing.JButton btnSaveData;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblYrsProcessed;
     private javax.swing.JTextField txtOutput;
     // End of variables declaration//GEN-END:variables
 }
