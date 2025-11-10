@@ -133,14 +133,14 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-        // TODO add your handling code here:
+        
+        //exits the application
         System.exit(0);
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
-        // TODO add your handling code here:
         
-        
+
         ProductSales logic = new ProductSales();
         
         txtOutput.setText("");
@@ -148,9 +148,11 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_btnClearActionPerformed
 
     private void btnLoadDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoadDataActionPerformed
-        // TODO add your handling code here:
-        txtOutput.setText("");
         
+        
+        //setting the text area to be blank
+        txtOutput.setText("");
+        //appends the text field to be able to add more text
         txtOutput.append("Total Sales: " + logic.GetTotalSales() );
         txtOutput.append("Average Sales: " + logic.GetAverageSales());
         txtOutput.append("Sales over limit: " + logic.GetSalesOverLimit());
@@ -158,17 +160,16 @@ public class Main extends javax.swing.JFrame {
         
         lblYrsProcessed.setText("Years Processed: " + logic.Get);
         
-        
-        
-        
-        
+            
     }//GEN-LAST:event_btnLoadDataActionPerformed
 
     private void btnSaveDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveDataActionPerformed
         // TODO add your handling code here:
         
+        //retrieves the text from the textarea
         String report = txtOutput.getText();
         
+        //writes the text from tetx area into a file named, data.txt
         try (FileWriter writer = new FileWriter("data.txt")) 
         {      
             writer.write("DATA LOG");

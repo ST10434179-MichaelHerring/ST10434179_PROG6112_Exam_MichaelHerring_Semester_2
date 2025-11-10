@@ -15,6 +15,7 @@ public class ST10434179_PROG6112_Exam_MichaelHerring_Semester_2 {
      */
     public static void main(String[] args) {
         
+        //arrays
         String[] year = {"Year 1","Year 2"};
         
         int[][] sales = {

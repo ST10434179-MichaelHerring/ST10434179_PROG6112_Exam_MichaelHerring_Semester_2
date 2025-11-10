@@ -35,6 +35,10 @@ public class ProductSales implements IProductSales{
     @Override
     public int GetSalesOverLimit() {
     
+        int limit = 500;
+        
+       for ( int i = 0 ; i < sales)
+        
     }
 
     @Override
